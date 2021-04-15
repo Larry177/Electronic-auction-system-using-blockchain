@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     div.categoryWithCarousel{
+      width: 100%;
+      position:relative;
+     }
+     div.categoryWithCarousel div.headbar{
+      background-color: #DD2727;
+     }
+     div.categoryWithCarousel div.head{
+      width: 200px;
+      background-color: #C60A0A;
+      height: 36px;
+      line-height: 36px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      margin-left: 20px;
+      display: inline-block;
+     }
+     div.categoryWithCarousel div.rightMenu{
+      display: inline-block;
+     }
+     div.categoryWithCarousel div.rightMenu a{
+      font-size: 16px;
+      color: white;
+      text-decoration:none;
+     }
+     div.categoryWithCarousel div.rightMenu span{
+      margin: 0px 20px 0px 20px;
+     }
+     div.categoryWithCarousel div.rightMenu img{
+      height: 30px;
+     }
+     div.carousel-of-product{
+      height: 510px;
+      width:1024px;
+      margin:0px auto;
+     }
+     img.carouselImage{
+      height: 510px !important;
+     }
+     div.carouselBackgroundDiv{
+      width:100%;
+      height:510px;
+      background-color:#E8E8E8;
+      position:absolute;
+      top:36px;
+      z-index:-1;
+     }
+        body{
+            font-size: 12px;
+            font-family: Arial;
+        }
+        a{
+            color:#999;
+        }
+        .redColor{
+            color: #C40000 !important;
+        }
+        nav.top{
+            background-color: #f2f2f2;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom:1px solid  #e7e7e7;
+        }
+        nav.top span, nav.top a{
+            color: #999;
+            margin: 0px 10px 0px 10px;
+        }
+        nav.top a:hover{
+            color: #C40000;
+            text-decoration: none;
+        }
+    </style>
+    <nav class="top ">
+        <a href="index.html">
+            <span class="glyphicon glyphicon-home redColor"></span>
+            ChainBay商品上传页面
+        </a>
+
+        <span>欢迎来到ChainBay!</span>
+        <!--
+        <a href="#nowhere">请登录</a>
+        <a href="#nowhere">免费注册</a>
+        -
+        <span class="pull-right">
+            <a href="#nowhere">我的拍卖</a>
+            <a href="#nowhere">
+            <span class=" glyphicon glyphicon-shopping-cart redColor" ></span>
+            拍卖成功<strong>0</strong>件</a>
+        </span>
+        -->
+    </nav>
+ <title>Decentralized Ecommerce Store</title>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="./app.js"></script>
+</head>
+<body>
+ <div class="container">
+  <!--<h1>商品上传</h1>-->
+  <a href="#nowhere" style="display: block; text-align: center;"> <img class="logo" src="upload.png" id="upload" style="margin: 0 auto;" >
+  </a>
+  <style>
+   div.categoryWithCarousel{
+    width: 150%;
+    position:relative;
+    right:200px
+   }
+   div.categoryWithCarousel div.headbar{
+    background-color: #DD2727;
+   }
+   div.categoryWithCarousel div.head{
+    width: 200px;
+    background-color: #DD2727;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    display: inline-block;
+   }
+   div.categoryWithCarousel div.rightMenu{
+    display: inline-block;
+   }
+   div.categoryWithCarousel div.rightMenu a{
+    font-size: 16px;
+    color: white;
+    text-decoration:none;
+   }
+   div.categoryWithCarousel div.rightMenu span{
+    margin: 0px 20px 0px 20px;
+   }
+   div.categoryWithCarousel div.rightMenu img{
+    height: 30px;
+   }
+   div.carousel-of-product{
+    height: 510px;
+    width:1024px;
+    margin:0px auto;
+   }
+   img.carouselImage{
+    height: 510px !important;
+   }
+   div.carouselBackgroundDiv{
+    width:100%;
+    height:510px;
+    background-color:#E8E8E8;
+    position:absolute;
+    top:36px;
+    z-index:-1;
+   }
+  </style>
+
+  <div class="categoryWithCarousel">
+   <div class="headbar" >
+    <div class="head " style="position:relative;left:133px">
+     <span style="margin-left:10px;"></span>
+    </div>
+    <div class="rightMenu" >
+     <span><a href="index.html" style="position:relative;left:120px">网站主页</a></span>
+     <span><a href="list-item.html" style="position:relative;left: 180px">商品上传</a></span>
+     <span><a href="index.html" style="position:relative;left:240px">商品浏览</a></span>
+     <span><a href="#nowhere" style="position:relative;left:300px">拍卖揭标</a></span>
+     <span><a href="#nowhere" style="position:relative;left:360px">查找更多</a></span>
+    </div>
+   </div>
+  </div>
+  <style>
+   div.carouselBackgroundDiv{
+    width:3000px;
+    height:650px;
+    background-color:#E8E8E8;
+    position:absolute;
+    right:0px;
+    top:36px;
+    z-index:-1;
+   }
+  </style>
+
+  <div class="carouselBackgroundDiv" style="position: absolute;top: 150px;">
+  </div>
+  <div class="container" style="position: relative;top: 20px;">
+   <div class="row">
+    <div style="display: none;" class="alert alert-success" id="msg"></div>
+    <form class="form-horizontal col-sm-5" id="add-item-to-store">
+     <div class="form-group" >
+      <label for="product-name" class="col-sm-3 control-label" style="color: red">商品名称</label>
+      <div class="col-sm-9" >
+       <input  type="text" name="product-name" class="form-control" id="product-name" placeholder="iPhone, Jeans, shoes etc" required="required"></input>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-description" class="col-sm-3 control-label" style="color: red">商品描述</label>
+      <div class="col-sm-9">
+       <textarea class="form-control" name="product-description" rows="8" id="product-description" placeholder="输入商品的描述信息" required="required"></textarea>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-image" class="col-sm-3 control-label" style="color: red">上传商品图片</label>
+      <div class="col-sm-9">
+       <input type="file" name="product-image" class="form-control" id="product-image" required="required">
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-category" class="col-sm-3 control-label" style="color: red">商品分类</label>
+      <div class="col-sm-9">
+       <select class="form-control" name="product-category" id="product-category">
+        <option>Art</option>
+        <option>Books</option>
+        <option>Cameras</option>
+        <option>Cell Phones & Accessories</option>
+        <option>Clothing</option>
+        <option>Coins & Paper Money</option>
+        <option>Collectibles</option>
+        <option>Computers/Tablets & Networking</option>
+        <option>Consumer Electronics</option>
+        <option>Crafts</option>
+        <option>DVDs & Movies</option>
+        <option>Entertainment Memorabilia</option>
+        <option>Gift Cards & Coupons</option>
+        <option>Music</option>
+        <option>Musical Instruments & Gear</option>
+        <option>Pet Supplies</option>
+        <option>Pottery & Glass</option>
+        <option>Sporting Goods</option>
+        <option>Stamps</option>
+        <option>Tickets</option>
+        <option>Toys & Hobbies</option>
+        <option>Video Games</option>
+       </select>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-price" class="col-sm-3 control-label" style="color: red">拍卖起始价</label>
+      <div class="col-sm-9">
+       <input type="text" class="form-control" name="product-price" id="product-price" required="required"></input>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-condition" class="col-sm-3 control-label" style="color: red">商品情况</label>
+      <div class="col-sm-9">
+       <select class="form-control" name="product-condition" id="product-condition">
+        <option value="1">全新</option>
+        <option value="2">二手</option>
+       </select>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-price" class="col-sm-3 control-label" style="color: red">拍卖起始时间</label>
+      <div class="col-sm-9">
+       <input type="datetime-local" class="form-control" name="product-auction-start" id="product-auction-start" required="required"></input>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="product-price" class="col-sm-3 control-label" style="color: red">拍卖持续时间</label>
+      <div class="col-sm-9">
+       <select class="form-control" name="product-auction-end" id="product-auction-end">
+        <option>1</option>
+        <option>3</option>
+        <option>5</option>
+        <option>7</option>
+        <option>10</option>
+       </select>
+      </div>
+     </div>
+     <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+       <button type="submit" class="btn btn-danger" style="position:relative;left:40px;color: #fefffd;">上传商品至ChainBay</button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
